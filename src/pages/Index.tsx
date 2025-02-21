@@ -3,6 +3,7 @@ import { RestaurantHero } from "@/components/RestaurantHero";
 import { RestaurantMenu } from "@/components/RestaurantMenu";
 import { RestaurantMoreDishes } from "@/components/RestaurantMoreDishes";
 import { RestaurantNavbar } from "@/components/RestaurantNavbar";
+import { RestaurantTestimonials } from "@/components/RestaurantTestimonials";
 
 const Index = () => {
   return (
@@ -11,6 +12,7 @@ const Index = () => {
       <RestaurantHero />
       <RestaurantMenu />
       <RestaurantMoreDishes />
+      <RestaurantTestimonials />
     </div>
   );
 };
