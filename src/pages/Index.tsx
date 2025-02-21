@@ -4,6 +4,7 @@ import { RestaurantMenu } from "@/components/RestaurantMenu";
 import { RestaurantMoreDishes } from "@/components/RestaurantMoreDishes";
 import { RestaurantNavbar } from "@/components/RestaurantNavbar";
 import { RestaurantTestimonials } from "@/components/RestaurantTestimonials";
+import { RestaurantFooter } from "@/components/RestaurantFooter";
 
 const Index = () => {
   return (
@@ -13,6 +14,7 @@ const Index = () => {
       <RestaurantMenu />
       <RestaurantMoreDishes />
       <RestaurantTestimonials />
+      <RestaurantFooter />
     </div>
   );
 };
