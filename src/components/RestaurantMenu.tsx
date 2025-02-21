@@ -19,16 +19,16 @@ export function RestaurantMenu() {
       name: "Lobster Thermidor",
       description: "Succulent lobster in a rich brandy cream sauce with Gruyère",
       price: "$48",
-      image: "https://images.unsplash.com/photo-1533477359335-daddb0c0a529?q=80&w=3270&auto=format&fit=crop"
+      image: "https://images.unsplash.com/photo-1539586345401-51d5bfba7ac0?q=80&w=3270&auto=format&fit=crop"
     }
   ];
 
   return (
-    <section className="py-20 bg-zinc-900">
+    <section className="py-20 bg-[#F1F0FB] dark:bg-zinc-800/50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Our Signature Dishes</h2>
-          <p className="text-zinc-400 max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 dark:text-white mb-4">Our Signature Dishes</h2>
+          <p className="text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">
             Explore our carefully curated menu featuring exquisite dishes prepared with the finest ingredients
           </p>
         </div>
