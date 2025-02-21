@@ -2,7 +2,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const transition = {
   type: "spring",
@@ -88,8 +88,11 @@ export const ProductItem = ({
   href: string;
   src: string;
 }) => {
+  const location = useLocation();
+  const isActive = location.pathname === href;
+
   return (
-    <Link to={href} className="flex space-x-2">
+    <Link to={href} className={`flex space-x-2 ${isActive ? 'opacity-50' : ''}`}>
       <img
         src={src}
         width={140}
@@ -109,11 +112,17 @@ export const ProductItem = ({
   );
 };
 
-export const HoveredLink = ({ children, ...rest }: any) => {
+export const HoveredLink = ({ children, to, ...rest }: any) => {
+  const location = useLocation();
+  const isActive = location.pathname === to;
+
   return (
     <Link
+      to={to}
+      className={`text-neutral-700 dark:text-neutral-200 hover:text-black ${
+        isActive ? 'text-primary font-semibold' : ''
+      }`}
       {...rest}
-      className="text-neutral-700 dark:text-neutral-200 hover:text-black"
     >
       {children}
     </Link>
